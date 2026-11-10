@@ -1,0 +1,1 @@
+PASS: 120 family/English-Indic comparisons independently recomputed; 120 shuffle results; pure-family homes; exact expert capacities; 12 layer-position results; exact replica budgets; original mentor code/results unchanged.

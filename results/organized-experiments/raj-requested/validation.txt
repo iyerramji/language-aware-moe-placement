@@ -1,0 +1,2 @@
+PASS: baseline targets, all-layer mentor parity, independent replica/load arithmetic, and tiny exhaustive ILP comparison.
+PASS: complete A/B/C/D grid counts; all metrics finite; D equal-mix parity with A; exact C budgets; 240/240 four-GPU IP proofs.

@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-09",
+  "repository": "728a92914e362fb1a5e20fe8a7c67ea05ec7a058",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.13 (main, Jun  3 2025, 18:38:25) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "seed": 0,
+  "source_file": "results/routing_qwen3_30b_a3b.npz",
+  "source_sha256": "001a820ea3d7d9873565fc9552678d98c8793d729e80ca2bc7b6afe81d50c96d",
+  "baseline": {
+    "4": {
+      "groups": [
+        [
+          "gu",
+          "pa",
+          "kn"
+        ],
+        [
+          "hi",
+          "mr",
+          "ml"
+        ],
+        [
+          "ta",
+          "te"
+        ],
+        [
+          "en",
+          "bn"
+        ]
+      ],
+      "local_share_baseline": 0.2569,
+      "local_share_aware": 0.3442,
+      "replicas_per_gpu": 4,
+      "local_share_aware_plus_replicas": 0.5955,
+      "remote_traffic_cut_pct": 11.8,
+      "remote_traffic_cut_pct_with_replicas": 45.6,
+      "by_band": {
+        "early (layers 1-8)": {
+          "baseline": 0.2581,
+          "aware": 0.3556,
+          "aware_plus_replicas": 0.5853
+        },
+        "middle (9-40)": {
+          "baseline": 0.2596,
+          "aware": 0.3363,
+          "aware_plus_replicas": 0.5779
+        },
+        "late (41-48)": {
+          "baseline": 0.2449,
+          "aware": 0.3647,
+          "aware_plus_replicas": 0.676
+        }
+      },
+      "expert_load_imbalance_aware_mean": 2.323,
+      "expert_load_imbalance_aware_max": 3.096,
+      "expert_load_imbalance_default_mean": 1.398,
+      "expert_load_imbalance_with_replicas_mean": 1.754,
+      "token_load_imbalance": 1.2
+    },
+    "8": {
+      "groups": [
+        [
+          "mr",
+          "te"
+        ],
+        [
+          "gu",
+          "kn"
+        ],
+        [
+          "en"
+        ],
+        [
+          "hi"
+        ],
+        [
+          "ta"
+        ],
+        [
+          "pa"
+        ],
+        [
+          "ml"
+        ],
+        [
+          "bn"
+        ]
+      ],
+      "local_share_baseline": 0.1274,
+      "local_share_aware": 0.2256,
+      "replicas_per_gpu": 4,
+      "local_share_aware_plus_replicas": 0.5112,
+      "remote_traffic_cut_pct": 11.3,
+      "remote_traffic_cut_pct_with_replicas": 44.0,
+      "by_band": {
+        "early (layers 1-8)": {
+          "baseline": 0.1277,
+          "aware": 0.232,
+          "aware_plus_replicas": 0.4949
+        },
+        "middle (9-40)": {
+          "baseline": 0.1281,
+          "aware": 0.2195,
+          "aware_plus_replicas": 0.492
+        },
+        "late (41-48)": {
+          "baseline": 0.1242,
+          "aware": 0.2435,
+          "aware_plus_replicas": 0.6041
+        }
+      },
+      "expert_load_imbalance_aware_mean": 3.769,
+      "expert_load_imbalance_aware_max": 5.076,
+      "expert_load_imbalance_default_mean": 1.771,
+      "expert_load_imbalance_with_replicas_mean": 2.672,
+      "token_load_imbalance": 1.6
+    }
+  },
+  "execution": "CPU simulation only; no GPU/cloud/training",
+  "tables_rows": {
+    "A": 36,
+    "B": 30,
+    "C": 10,
+    "D": 72
+  },
+  "artifacts": {
+    "results/ablations/SETUP.md": "ad6fa0f3ed55bac0c3ddfffae4ca3e4f9232b392200ef32784ce1c402756557d",
+    "results/ablations/validation.txt": "d05d4c5eec1bc2c8d9b909302b9a6a420d2adc215e3c96df2cc9d339c4c44f1e",
+    "results/ablations/FINDINGS.md": "3802351eefb2e31ad8623299aa19f6a01eec1ec86fef65761ed99a8e30cc1416",
+    "results/ablations/environment.txt": "c02e5c213ec286c739e38eb8ef7885af7b6b6d7d352be61625efde63bdee1885",
+    "results/ablations/A/table.csv": "1f685bb8cd82c752cf390214f61948b7bf891606e40aea72953d280d01acc93f",
+    "results/ablations/A/frontier.png": "5648251620892a11d9c99fdb3fccc3a7a1bc0676108286d032dbdac2ce4783d3",
+    "results/ablations/A/NOTES.md": "a0dbfe183420ea4ad0ccc205eda54411b4704a890bbfb763e88504a336fd88d7",
+    "results/ablations/B8/pilot.json": "0e11523e868594ca6e6e37f6389a2b685fe05870a927752f05ec4701535f9f47",
+    "results/ablations/C/table.csv": "eb7fbe5a8a88cd88d17762e45c36c4c8c158432f251181b8fd0d194c44533817",
+    "results/ablations/C/allocations.json": "ea59d84d9d1cba7576579572b48b91dc8de42a8ac5ee1bb2979a0cb8d02156d3",
+    "results/ablations/C/NOTES.md": "01e18f8f531fb99cd8c1e2a6e1792bd26ba9aecb43d522d9535dae5648f0fbe0",
+    "results/ablations/C/per_layer.png": "cf1d251cf51ddfaa75870ac1520463d57554045ced47efb33e0a30d365586e46",
+    "results/ablations/D/table.csv": "5c4059dfb79dc5edf4c25d155ed18a9122f8ef4cf18483ee08cd56230cb70409",
+    "results/ablations/D/fit_by_serve_R4.png": "ac442cb8d2014226a4465c66a98c927e570a5d2705f9323888dedf487de75cc2",
+    "results/ablations/D/fit_by_serve_R2.png": "2f2871bb253679567a1c2bbd09d6365b46556becf4e31b5625f752dbba89048e",
+    "results/ablations/D/NOTES.md": "fe3f02e20069260ab25b2bdfa672a0efe504676015068e21a7a6c1f7d946cb9d",
+    "results/ablations/D/plans.json": "8a9cde37c4ed12a424e2a8ea99b567ab3fed226241df22fc67ce7e68df404f7b",
+    "results/ablations/B/solver-details.json": "d95d34e4428a252d3340bd0e83eb9df1a595c35b248346b5c8df4754af07c691",
+    "results/ablations/B/table.csv": "7efea7bc35f0d7415ecc55db2b01f6983c8f7c8199deca5e7b010e6a67b4e9bc",
+    "results/ablations/B/accounting.npz": "44fc337a432ac9033f556eadc1026824ee5137cb3b84d4743f4db77bdb4f93ac",
+    "results/ablations/B/frontier.png": "05798347911a5836193b0060424bc853f33d1bd0fa03b3e8884aa2efe9ceb2d0",
+    "results/ablations/B/NOTES.md": "a6ebb902c9b592cabf69193a70e2fa755c79ba2bfb2a209dd3e5a76533fba472"
+  }
+}

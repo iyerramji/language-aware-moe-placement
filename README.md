@@ -72,3 +72,12 @@ After these four, we move to real GPUs: a placement plugin for vLLM and latency 
 
 The routing counts come from Qwen3-30B-A3B (Apache 2.0) run on Wikipedia text (CC BY-SA 3.0 and GFDL). The code is released
 under the MIT licence.
+
+## Ramji’s local ablation results
+
+Executed CPU simulations using the supplied Qwen3/Wikipedia counts, 9 November 2026. No measured GPU latency or network-byte reduction is claimed.
+
+- [Raj-requested setup and A–D](results/organized-experiments/raj-requested/FINDINGS.md): tables, figures, checks and original submission bundle. A/C cover 4/8 simulated GPUs; B covers 4 with certified layer optima; D covers 4. The optional 8-GPU B pilot was stopped.
+- [Ramji’s additional ideas](results/organized-experiments/ramji-ideas/USER_IDEAS.md): language-family controls, English/Indic pooling and replica-position sensitivity. The proposed shared FFN was not executed.
+
+Runnable additions are in `ablations/`. Original `analyze.py` and `results/exp01/` are unchanged. The aborted joint planner is not included.

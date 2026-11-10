@@ -1,0 +1,19 @@
+{
+  "within_family_pairwise_js_bits": 0.03223300668890228,
+  "between_family_pairwise_js_bits": 0.039606953984219886,
+  "within_pairs": 16,
+  "between_pairs": 20,
+  "family_mapping": {
+    "en": "English",
+    "hi": "Indo-Aryan",
+    "bn": "Indo-Aryan",
+    "mr": "Indo-Aryan",
+    "gu": "Indo-Aryan",
+    "pa": "Indo-Aryan",
+    "ta": "Dravidian",
+    "te": "Dravidian",
+    "kn": "Dravidian",
+    "ml": "Dravidian"
+  },
+  "family_source": "https://censusindia.gov.in/nada/index.php/catalog/42458/download/46089/C-16_25062018.pdf"
+}
