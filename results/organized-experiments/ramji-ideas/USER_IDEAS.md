@@ -32,7 +32,7 @@ Held-out Indic routing distances: mean within-family JS 0.03223 bits; between-fa
 
 ## 2. English separate, Indic pooled; vary layer replica locations
 
-This is an executed placement sensitivity study, not a shared-FFN experiment. English has one home GPU and Indic languages use the remaining pool, with fixed home assignments across layers. Every policy has96copies per GPU across48layers.
+This tests where existing expert replicas are placed. English has one home GPU and Indic languages use the remaining pool, with fixed home assignments across layers. Every policy has96copies per GPU across48layers.
 
 | Replica allocation | 4GPU remote-hit reduction | 8GPU remote-hit reduction |
 
@@ -50,11 +50,7 @@ This is an executed placement sensitivity study, not a shared-FFN experiment. En
 
 | fit_selected_window8 | 25.56% | 22.43% |
 
-**Interpretation:** Spreading replicas uniformly beats middle-only and concentrated boundary windows in this fixed-budget test. It does not support a blanket “replicate middle layers” rule for this checkpoint/data. It says nothing about a newly trained common FFN.
-
-## 3. Shared pre-router FFN: designed, NOT RUN
-
-A shared FFN could alter hidden states and router decisions. Counts alone cannot simulate that intervention. [The experiment design](FFN-design/NOT_RUN.md) lays out early/middle/late and boundary variants, identity and parameter-matched controls, training controls, and quality/communication measurements. No synthetic count change is presented as evidence.
+**Interpretation:** Spreading replicas uniformly beats middle-only and concentrated boundary windows in this fixed-budget test. It does not support a blanket “replicate middle layers” rule for this checkpoint/data.
 
 ## What was preserved
 
@@ -70,4 +66,4 @@ All “reductions” are remote expert-hit proxies against a uniform-origin, no-
 
 ![Language-family comparison](E/family_frontier.png)
 
-![Layer position comparison, NOT an FFN intervention](F/layer_positions.png)
+![Layer replica position comparison](F/layer_positions.png)

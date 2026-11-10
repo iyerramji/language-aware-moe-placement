@@ -4,7 +4,7 @@ Executed on Qwen3/Wikipedia marginal routing counts only. Indo-Aryan:Hindi,Benga
 
 Four GPUs:1English home,2Indo-Aryan homes,1Dravidian home; family subgroup sizes1/3/2/4. Eight GPUs:1English,4Indo-Aryan,3Dravidian homes. English/Indic-only pooling keeps English on one GPU and fit-optimizes Indic partitions among the other GPUs. Every GPU retains E/G primary expert slots; same R copies per GPU/layer. All experts remain accessible; no router is changed. This is home-assignment grouping, not an architectural language-specific expert restriction.
 
-The different grouping sizes and home workload can confound raw comparisons. The same-sizes control fixes English isolation and group sizes but removes family restrictions. Twenty seeded shuffled-family labelings preserve all family sizes and within-family optimization, excluding the true mapping. They are an exploratory control, not exhaustive statistical proof. Grouping uses fit counts; metrics use held-out counts. No measured bytes, latency or learned FFN result.
+The different grouping sizes and home workload can confound raw comparisons. The same-sizes control fixes English isolation and group sizes but removes family restrictions. Twenty seeded shuffled-family labelings preserve all family sizes and within-family optimization, excluding the true mapping. They are an exploratory control, not exhaustive statistical proof. Grouping uses fit counts; metrics use held-out counts. No network bytes or latency measured.
 
 - G=4, R2 equal: family remote-hit reduction 39.776%, imbalance 2.539; advantage versus English-separated same-sizes control 1.582 percentage points. English/Indic pooling 36.456% reduction, imbalance 1.643. Family beats 19/20 shuffled controls; shuffle range 37.378–39.932%.
 

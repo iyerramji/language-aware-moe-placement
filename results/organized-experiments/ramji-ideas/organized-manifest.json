@@ -1,21 +1,20 @@
 {
-  "execution": "Local CPU expert-count simulations; shared FFN not run",
+  "execution": "Local CPU expert-count placement simulations",
   "source_sha256": "001a820ea3d7d9873565fc9552678d98c8793d729e80ca2bc7b6afe81d50c96d",
   "artifacts": {
-    "user-ideas.html": "95b405953d31492c944fe446b90b666147768277be147e6b40ef2e528d633ea0",
-    "README.md": "7114cd42aba6daeadecd52f8a9bc011d634ceea2c3ed211263d891b107edbf14",
-    "USER_IDEAS.md": "cad30eeb003fceb066c11dcd0575d16df63a70163998eb08a97935d37e32b5a5",
+    "user-ideas.html": "ca744e944cd8445c5b35a0d04bc80d0868da6f2c931ecba101df0604e2244241",
+    "README.md": "7f5d03cd7ba62a29f6984e56b5ddba78fc04207244b07ba68977493b47f689ff",
+    "USER_IDEAS.md": "f05d995121ff6ff8c17f94dc2e4952baa3bcd7427fb7de6479b1bff7bd280743",
     "family-validation.txt": "22be3599ac14d72cc51bf75e9596b7b0f1c2324044e58b203a3804f2cc685765",
     "F/table.csv": "333666f88fa62143bd7c9a2e6cda6172dab12be5945da6d4162e06ce0a577044",
     "F/allocations.json": "9f163165e1230f906c2c4bf9c60a9311ffa82d350c821519bac08800f49fea1c",
-    "F/layer_positions.png": "7361ba17db9bdc1eb99faacb5d8062b24e517a35c8666768b5f842a5e4208f76",
-    "F/NOTES.md": "2a74c8cd1571fcdb114cd3c144fb77c7841ee58a7d1398ea03faa3021d2b3ba6",
-    "FFN-design/NOT_RUN.md": "1b7656c25726ebb7e69d85f41008ac4a2f2a2c0b74a877d7ae7018a2dc72ec61",
+    "F/layer_positions.png": "c6258ae3abab33158c7835d8cbfa00e3da493aa2f1bbbc9562a966f828464444",
+    "F/NOTES.md": "58344cb3d90b17dcab4fd5d38323b5574dd3170a7adb30ccb6a85b816ce75204",
     "E/family_frontier.png": "3ee2aaeed42ad4a632cea0fcf1732bfa2a2d20114596d4d2968ca0f2a33732d5",
     "E/table.csv": "d9702cc9e57d606f7f26fa2b2eaf012c59fa4900e9c93364a9d7a908c20f59cf",
     "E/shuffle-control.csv": "895d46b8531f1ab6ef6669a390845ce21afbf79f293979b59b69abb1d011d5d3",
     "E/diagnostics.json": "c7fc17d57b4c095419dc1001675e923fcad203f725e102707f70e6953f94051f",
-    "E/NOTES.md": "88281b201bd8d98725b755bfe41f79bc54f27edc36c53b24127441c531dbe100",
+    "E/NOTES.md": "7f716f46ffb54ea35a3cbf427d7097920eb6634f54ad5422317d8a17b793dc21",
     "E/plans.json": "efd90a4d65b0cb5e1a0a5a9bcea5241eab96b376c37175eb71b5cf8773ae4058"
   }
 }
