@@ -1,0 +1,9 @@
+{
+  "input_tokens_per_window": 65536,
+  "requests_per_window": 128,
+  "input_tokens_per_request": 512,
+  "total_input_tokens": 2097152,
+  "scenario": "Synthetic fixed-length Wikipedia-like input workload; token scale explicitly chosen, not inferred from a production trace. Existing trajectory metrics re-expressed without changing results.",
+  "source_table_sha256": "241fe80c10b9fcc52aea3fb6b03f6617392d2393c08b5d06c2e0988621b0a987",
+  "source_window_sha256": "996f13d17ce8bcf2da3721df3d31afe5ca6ac860d45a26602a4020ab3140c7e5"
+}

@@ -85,3 +85,7 @@ Runnable additions are in `ablations/`. Original `analyze.py` and `results/exp01
 ## Raj follow-up results
 
 The follow-up is separate from the first A–F runs: [report and limitations](results/raj-followup/2026-11-09/REPORT.md), [tables and figures](results/raj-followup/2026-11-09/index.html), and [reply draft](docs/raj-followup-reply.md). It includes the eight-GPU greedy B sweep, expected randomized-homing controls and synthetic rebuild sensitivity. The exact request-level shuffle remains unrun because per-request routing counts are missing. Reproduction scripts are in `followup/`.
+
+## Exact per-sequence shuffle follow-up
+
+[Exact-shuffle report](results/raj-exact-followup/2026-11-09/REPORT.md) and [reply draft](docs/raj-exact-shuffle-reply.md), kept separately from earlier A–F and approximation runs. Actual recorded sequences cover Sarvam Wikipedia and both FLORES models. Includes length-weighting and parallel-content controls, locality–imbalance curves and a token-normalized synthetic rebuild analysis. Inputs in data/per_sequence are from upstream commit d2a1f96427d769e817921bdcb5aa7652647fb2c8, with provenance and licences documented there. No text or model weights are included.

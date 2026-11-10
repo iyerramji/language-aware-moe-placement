@@ -1,0 +1,7 @@
+{
+  "dataset": "qwen3_wikipedia_aggregate",
+  "source": "results/raj-followup/2026-11-09/balance8/table.csv",
+  "sha256": "560e6b3ab8a75d0a44fe22c8fa2da5b794f1c7186b671bcc8fc279c569844b8c",
+  "weighting": "Earlier equal-language-token weighting; new per-sequence curves use actual input-token work. Kept in a separate panel.",
+  "rerun": false
+}

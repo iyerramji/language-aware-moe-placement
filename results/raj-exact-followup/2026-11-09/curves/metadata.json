@@ -1,0 +1,170 @@
+{
+  "sarvam_wikipedia_4": {
+    "groups": [
+      [
+        "hi",
+        "pa",
+        "bn"
+      ],
+      [
+        "ml",
+        "mr",
+        "te"
+      ],
+      [
+        "kn",
+        "gu"
+      ],
+      [
+        "ta",
+        "en"
+      ]
+    ],
+    "fit_tokens": 245760,
+    "eval_tokens": 245760
+  },
+  "sarvam_wikipedia_8": {
+    "groups": [
+      [
+        "hi",
+        "pa"
+      ],
+      [
+        "te",
+        "kn"
+      ],
+      [
+        "en"
+      ],
+      [
+        "mr"
+      ],
+      [
+        "ta"
+      ],
+      [
+        "ml"
+      ],
+      [
+        "bn"
+      ],
+      [
+        "gu"
+      ]
+    ],
+    "fit_tokens": 245760,
+    "eval_tokens": 245760
+  },
+  "qwen3_flores_4": {
+    "groups": [
+      [
+        "kn",
+        "ta",
+        "ml"
+      ],
+      [
+        "te",
+        "gu",
+        "pa"
+      ],
+      [
+        "mr",
+        "bn"
+      ],
+      [
+        "en",
+        "hi"
+      ]
+    ],
+    "fit_tokens": 368864,
+    "eval_tokens": 360927
+  },
+  "qwen3_flores_8": {
+    "groups": [
+      [
+        "te",
+        "kn"
+      ],
+      [
+        "pa",
+        "ml"
+      ],
+      [
+        "bn"
+      ],
+      [
+        "ta"
+      ],
+      [
+        "mr"
+      ],
+      [
+        "gu"
+      ],
+      [
+        "hi"
+      ],
+      [
+        "en"
+      ]
+    ],
+    "fit_tokens": 368864,
+    "eval_tokens": 360927
+  },
+  "sarvam_flores_4": {
+    "groups": [
+      [
+        "kn",
+        "ta",
+        "ml"
+      ],
+      [
+        "te",
+        "gu",
+        "pa"
+      ],
+      [
+        "mr",
+        "bn"
+      ],
+      [
+        "en",
+        "hi"
+      ]
+    ],
+    "fit_tokens": 93780,
+    "eval_tokens": 90634
+  },
+  "sarvam_flores_8": {
+    "groups": [
+      [
+        "mr",
+        "pa"
+      ],
+      [
+        "kn",
+        "ml"
+      ],
+      [
+        "en"
+      ],
+      [
+        "ta"
+      ],
+      [
+        "hi"
+      ],
+      [
+        "gu"
+      ],
+      [
+        "te"
+      ],
+      [
+        "bn"
+      ]
+    ],
+    "fit_tokens": 93780,
+    "eval_tokens": 90634
+  }
+}
