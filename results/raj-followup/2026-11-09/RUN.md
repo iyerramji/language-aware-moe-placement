@@ -1,0 +1,1 @@
+Run from the existing repository with .venv/bin/python followup/01_shuffle.py, then 02_balance8.py, 03_rebuild.py, validate.py and report.py. Earlier source counts and original baseline files are required. The bundle is not a standalone model or dataset.

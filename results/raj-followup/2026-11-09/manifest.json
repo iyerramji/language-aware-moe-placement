@@ -1,0 +1,40 @@
+{
+  "source_sha256": "001a820ea3d7d9873565fc9552678d98c8793d729e80ca2bc7b6afe81d50c96d",
+  "source_commit": "3fb75a657fce7528ac237255e95bc885ed2d0114",
+  "python": "3.11.13 (main, Jun  3 2025, 18:38:25) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "seed": 20261109,
+  "scope": "Local follow-up; earlier files unchanged; literal request shuffle unavailable",
+  "artifacts": {
+    "index.html": "f9707fd3bc63bef96326879742a6dea1081fb9ab3792bc61399fc305190aa098",
+    "REPORT.md": "1047a1e9ff1c622b558e8316a1efc31c946abbfc3612066f5f11cdfb9e555e8e",
+    "validation.txt": "2656b6e0e2030102e1a3dace597be6dc75e4af1478fd182a196df7ffb7cb52f9",
+    "RUN.md": "33475c4cf1dc6ac9d51770868f84dfc61b6a64c3a2637d8576c8178ec69cdd69",
+    "PROTOCOL.md": "ab44d28c00fa56a90c371598a8d015d6c93baa1c259554d38f86e4b4c1d9b9c8",
+    "shuffle/whole-language-shuffles.csv": "e8a2ddd829ef5e58dccc3bb4f8ef21d767637350f6a91f32ed495db828ade1dd",
+    "shuffle/table.csv": "3010b23eb6e26fdb3f434e67d529a098f50471fe45aa256c5cd074ac5b05a677",
+    "shuffle/comparison.png": "e4d611394621a99c60c8c21daa5e9811acfc856ed11f96dd5c944849f9c08fd2",
+    "shuffle/NOTES.md": "25006bce6a6f303e4b7475dcd6211ee61e41c2112705a426d2213aecc7dbf283",
+    "shuffle/plans.json": "e787546722cdae1a4dd538dcfb9f44418d6a46b0b7a8db547fd5ddda8cf3dca3",
+    "balance8/table.csv": "560e6b3ab8a75d0a44fe22c8fa2da5b794f1c7186b671bcc8fc279c569844b8c",
+    "balance8/layer-checks.csv": "74ae51309951404a6768dd25ac71cccca8c65ec253d4b64476f5f7a4fb0f14e1",
+    "balance8/comparison.png": "178ca0da0ed867e934078e19b3aa1f43e32fc340de53a7e535672cb3072cb4d0",
+    "balance8/placements.npz": "d66404be0a3ee5e079bf0a9521a26d978373b73ee83447efc440234f03882c26",
+    "balance8/NOTES.md": "ad7786c5b50fc318f9d5335daa40112f36a54c507fd9cf49f627c21176e10f07",
+    "rebuild/trajectories.json": "1a4efe7683a5c9ac3d0d938b3ebada1cf5e131bf55e6ffb544c8695617f94f8a",
+    "rebuild/fit-cache.json": "70136f8245a5f7f0dd4ccdfa74328378ce4126374c56371a17974805d29646cc",
+    "rebuild/table.csv": "241fe80c10b9fcc52aea3fb6b03f6617392d2393c08b5d06c2e0988621b0a987",
+    "rebuild/frequency.png": "16240a9a995da769d643589f30826de346096eece0d27d70ce78bd8e88c1497b",
+    "rebuild/block-results.csv": "996f13d17ce8bcf2da3721df3d31afe5ca6ac860d45a26602a4020ab3140c7e5",
+    "rebuild/NOTES.md": "16b77568934029e6b11ef0f28d800994167f189e90bfae3afa056a86e3dea3c7"
+  },
+  "scripts": {
+    "followup/01_shuffle.py": "835a67a011446782877aef4dc511313dd51a2190b1c2ec476f8e0e7cd47aeb0a",
+    "followup/03_rebuild.py": "c8b61f13a8ca960583e178e86877fd71fa29cb154e7e34eb3a2526ade7f4904f",
+    "followup/render_figures.py": "d865daf5b19353e6155ba7e6b71515c10243cc51d9a1f0853461c750a2b19dfc",
+    "followup/validate.py": "807017085c7c694e1457bdca1f6c82610d3deeeb7a8e645ad2574833a9c154dd",
+    "followup/common.py": "e81fe80dc5ef54b07f5f8d916c5e19f0992e7478cfb603caf5cb0dd6e8cf5781",
+    "followup/02_balance8.py": "76b192315ad8d272290c22e0cdb688dad705e954228bd4ebaa3237578fd940b9",
+    "followup/report.py": "0962fc360133d0b109dee6b0f0108f9f5419a79756299659acff78507dfa8705"
+  }
+}

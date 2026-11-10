@@ -1,0 +1,2 @@
+PASS: conserved shuffled-expectation demand and fixed group masses; exhaustive toy request-permutation expectation; all 16 shuffle rows / 400 packet permutations; 480 feasible greedy layers; 42 balance rows; exact four-GPU prior-greedy parity; 72 rebuild settings / 2304 block records; prior A-D archive unchanged.
+LIMIT: no per-request routing traces; shuffle realization/uncertainty unavailable. Rebuild trajectories synthetic; no wall-clock deployment interval or actual bytes/latency inferred.

@@ -81,3 +81,7 @@ Executed CPU simulations using the supplied Qwen3/Wikipedia counts, 9 November 2
 - [Ramji’s additional ideas](results/organized-experiments/ramji-ideas/USER_IDEAS.md): language-family controls, English/Indic pooling and replica-position sensitivity.
 
 Runnable additions are in `ablations/`. Original `analyze.py` and `results/exp01/` are unchanged. The aborted joint planner is not included.
+
+## Raj follow-up results
+
+The follow-up is separate from the first A–F runs: [report and limitations](results/raj-followup/2026-11-09/REPORT.md), [tables and figures](results/raj-followup/2026-11-09/index.html), and [reply draft](docs/raj-followup-reply.md). It includes the eight-GPU greedy B sweep, expected randomized-homing controls and synthetic rebuild sensitivity. The exact request-level shuffle remains unrun because per-request routing counts are missing. Reproduction scripts are in `followup/`.
