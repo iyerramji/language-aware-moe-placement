@@ -11,7 +11,9 @@ I ran the setup and A–D locally using Codex and the Qwen3 routing data from yo
 
 **What I wanted to try separately**
 
-- [Language-family grouping and English/Indic pooling](https://github.com/iyerramji/language-aware-moe-placement/blob/codex/ablation-results/results/organized-experiments/ramji-ideas/E/NOTES.md): I wanted to see whether keeping English separate and grouping Indo-Aryan and Dravidian languages helped. The family plan improved four-GPU locality but increased overload. On eight GPUs it was essentially tied with the English-separated, same-size control. So this did not give a consistent family-based advantage.
+I was thinking of trying grouping by language origins—specifically Indo-Aryan and Dravidian—to see whether that helped placement. I also wanted to compare keeping English separate and pooling the Indic languages, then varying which layers received the copies. I ran these separately from A–D.
+
+- [Language-family grouping and English/Indic pooling](https://github.com/iyerramji/language-aware-moe-placement/blob/codex/ablation-results/results/organized-experiments/ramji-ideas/E/NOTES.md): The family plan improved four-GPU locality but increased overload. On eight GPUs it was essentially tied with the English-separated, same-size control. So this did not give a consistent family-based advantage.
 - [Where to put the copies](https://github.com/iyerramji/language-aware-moe-placement/blob/codex/ablation-results/results/organized-experiments/ramji-ideas/F/NOTES.md): with English separate and Indic languages pooled, I compared early, middle, late and boundary layers at the same total replica memory. Uniform copying across layers beat the concentrated variants we tested.
 
 The tables and figures are linked in the reports. These are remote expert-hit estimates, not measured network bytes or latency. A and C include four and eight simulated GPUs; B completed four GPUs, and I stopped the optional eight-GPU solver pilot because it was slow. D uses four GPUs. My additional tests include four and eight GPUs.
