@@ -18,7 +18,11 @@ I was thinking of trying grouping by language origins—specifically Indo-Aryan 
 
 The tables and figures are linked in the reports. These are remote expert-hit estimates, not measured network bytes or latency. A and C include four and eight simulated GPUs; B completed four GPUs, and I stopped the optional eight-GPU solver pilot because it was slow. D uses four GPUs. My additional tests include four and eight GPUs.
 
-The Indic-only result is the one I would like to discuss next—particularly how much comes from request homing rather than differences between the Indic languages.
+**What surprised me**
+
+The Indic-only result surprised me most. Since the Indian languages had looked similar in the routing analysis, I thought removing English might leave much less benefit. But with two copies per GPU on four GPUs, the Indic-only plan still had an 11.10 percentage-point advantage over the language-blind comparator. I would like to understand how much of that comes from request homing and layout rather than differences between the Indic languages.
+
+I was also surprised that tightening the balance constraint kept almost all the simulated saving. I expected a bigger trade-off between keeping expert work local and spreading the load. That looks worth checking on real GPUs, without assuming it will translate directly into lower latency.
 
 Thanks,
 Ramji
