@@ -28,6 +28,6 @@ The four-L40S PyTorch/NCCL benchmark compares the blind, aware and capped layout
 
 ## Cloud capacity, 20 November 2026
 
-Modal queued a single four-L40S worker and reported it was waiting for capacity. EC2 On-Demand returned `InsufficientInstanceCapacity` in Oregon, Virginia and Frankfurt for the lean `g6e.12xlarge` and the larger `g6e.24xlarge`, both with four L40S GPUs. Attempts to allocate the lean size with one-time Spot requests also returned insufficient capacity. No EC2 instance started. The temporary SSH security groups and imported key pairs were deleted and their removal verified.
+Modal queued a single four-L40S worker and reported it was waiting for capacity. EC2 On-Demand returned `InsufficientInstanceCapacity` in Oregon, Virginia and Frankfurt for the lean `g6e.12xlarge` and the larger `g6e.24xlarge`, both with four L40S GPUs. Attempts to allocate the lean size with one-time Spot requests also returned insufficient capacity. The Oregon account quota covers 768 On-Demand G/VT vCPUs, with zero matching running or pending instances at the check. The lean host needs 48 vCPUs. An Oregon retry without a preferred zone returned the same capacity error. No EC2 instance started. The temporary SSH security groups and imported key pairs were deleted and their removal verified.
 
 The [EC2 runner](../../../gpu_pilot/aws_sarvam_cap.py) uses the same shared harness, checkpoint revision, prompt IDs and placement maps as Modal. The EC2 runner has passed local syntax and argument checks. Live GPU results will require a successful four-L40S allocation.
