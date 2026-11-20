@@ -93,3 +93,7 @@ The follow-up is separate from the first A–F runs: [report and limitations](re
 ## Four-GPU Sarvam decode pilot
 
 The [pilot report](results/gpu-pilot/modal-sarvam-decode/REPORT.md) compares three expert layouts on four L40S GPUs. See the [metrics CSV](results/gpu-pilot/modal-sarvam-decode/summary.csv) and [one-layer counter validation](results/gpu-pilot/modal-sarvam-layer/REPORT.md).
+
+## Sarvam load-cap follow-up
+
+The [follow-up report](results/gpu-pilot/2026-11-20-cap/REPORT.md) records the local cap audit, held-out replay, and the status of the matched four-L40S benchmark.
