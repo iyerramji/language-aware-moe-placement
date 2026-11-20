@@ -148,6 +148,7 @@ for r in rows:
 report += ["", "## Paired comparisons\n"]
 for mix in ("indic_only", "full"):
     for arm, comparator in (("blind_aa", "language_blind"),
+                            ("language_aware", "language_blind"),
                             ("aware_cap_125", "language_aware"),
                             ("aware_cap_125", "language_blind"),
                             ("aware_cap_115", "language_aware"),
@@ -201,8 +202,10 @@ report += [
     "were not measured.",
     "",
     "Reproduce by running `cap_plans.py` and `replay_cap.py` with the output folder as "
-    "their argument, then `modal run --timestamps --write-result "
-    "results/gpu-pilot/2026-11-20-cap/gpu-result.json gpu_pilot/modal_sarvam_cap.py::benchmark`. "
+    "their argument. On the GPU host, install the pinned Python packages from the "
+    "[bootstrap script](massed-bootstrap.sh). Run "
+    "[the Massed Compute entry point](../../../gpu_pilot/massed_sarvam_cap.py) "
+    "from a scratch directory containing the frozen maps. "
     "Run `report_cap.py` with the same folder to validate and summarize the payload.",
     "",
     "[Fit audit](fit-audit.json) · [Local replay CSV](local-replay.csv) · [Frozen maps](cap-maps.json) · [GPU records](gpu-result.json) · "

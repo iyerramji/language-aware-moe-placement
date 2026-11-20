@@ -96,4 +96,4 @@ The [pilot report](results/gpu-pilot/modal-sarvam-decode/REPORT.md) compares thr
 
 ## Sarvam load-cap follow-up
 
-The [follow-up report](results/gpu-pilot/2026-11-20-cap/REPORT.md) records the local cap audit, held-out replay, and the status of the matched four-L40S benchmark.
+The [follow-up report](results/gpu-pilot/2026-11-20-cap/REPORT.md) contains the local cap audit, held-out replay, and the completed four-L40S Massed Compute benchmark.
