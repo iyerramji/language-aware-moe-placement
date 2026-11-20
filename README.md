@@ -89,3 +89,7 @@ The follow-up is separate from the first A–F runs: [report and limitations](re
 ## Exact per-sequence shuffle follow-up
 
 [Exact-shuffle report](results/raj-exact-followup/2026-11-09/REPORT.md) and [reply draft](docs/raj-exact-shuffle-reply.md), kept separately from earlier A–F and approximation runs. Actual recorded sequences cover Sarvam Wikipedia and both FLORES models. Includes length-weighting and parallel-content controls, locality–imbalance curves and a token-normalized synthetic rebuild analysis. Inputs in data/per_sequence are from upstream commit d2a1f96427d769e817921bdcb5aa7652647fb2c8, with provenance and licences documented there. No text or model weights are included.
+
+## Four-GPU Sarvam decode pilot
+
+The [pilot report](results/gpu-pilot/modal-sarvam-decode/REPORT.md) compares three expert layouts on four L40S GPUs. See the [metrics CSV](results/gpu-pilot/modal-sarvam-decode/summary.csv) and [one-layer counter validation](results/gpu-pilot/modal-sarvam-layer/REPORT.md).

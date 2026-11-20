@@ -1,0 +1,20 @@
+2026-11-19 15:59:01-08:00 Four L40S devices ready. Loaded 60 held-out FLORES prompts.
+2026-11-19 16:00:54-08:00 Complete full research_default repeat=1
+2026-11-19 16:01:01-08:00 Complete full research_default repeat=2
+2026-11-19 16:01:07-08:00 Complete full research_default repeat=3
+2026-11-19 16:01:25-08:00 Complete full language_blind repeat=1
+2026-11-19 16:01:33-08:00 Complete full language_blind repeat=2
+2026-11-19 16:01:39-08:00 Complete full language_blind repeat=3
+2026-11-19 16:01:58-08:00 Complete full language_aware repeat=1
+2026-11-19 16:02:05-08:00 Complete full language_aware repeat=2
+2026-11-19 16:02:12-08:00 Complete full language_aware repeat=3
+2026-11-19 16:02:29-08:00 Complete indic_only research_default repeat=1
+2026-11-19 16:02:36-08:00 Complete indic_only research_default repeat=2
+2026-11-19 16:02:41-08:00 Complete indic_only research_default repeat=3
+2026-11-19 16:03:00-08:00 Complete indic_only language_blind repeat=1
+2026-11-19 16:03:06-08:00 Complete indic_only language_blind repeat=2
+2026-11-19 16:03:13-08:00 Complete indic_only language_blind repeat=3
+2026-11-19 16:03:31-08:00 Complete indic_only language_aware repeat=1
+2026-11-19 16:03:38-08:00 Complete indic_only language_aware repeat=2
+2026-11-19 16:03:44-08:00 Complete indic_only language_aware repeat=3
+2026-11-19 16:03:47-08:00 Stopping app - local entrypoint completed.

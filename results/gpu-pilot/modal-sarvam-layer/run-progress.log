@@ -1,0 +1,3 @@
+2026-11-19 14:54:34-08:00 ['NVIDIA L40S', 'NVIDIA L40S', 'NVIDIA L40S', 'NVIDIA L40S']; topology status=255; P2P=[[False, False, False, False], [False, False, False, False], [False, False, False, False], [False, False, False, False]]
+2026-11-19 14:54:38-08:00 Verified byte ranges for 21 checkpoint tensors
+2026-11-19 14:54:45-08:00 Stopping app - local entrypoint completed.

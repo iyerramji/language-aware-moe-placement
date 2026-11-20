@@ -1,0 +1,325 @@
+{
+  "checkpoint_revision": "071ae95e933605ca1104a6b4524a36a98488efa4",
+  "decoder_layer_zero_indexed": 1,
+  "devices": [
+    "NVIDIA L40S",
+    "NVIDIA L40S",
+    "NVIDIA L40S",
+    "NVIDIA L40S"
+  ],
+  "topology": {
+    "exit_code": 255,
+    "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nFailed to run topology matrix: Unknown Error\n\n",
+    "stderr": ""
+  },
+  "cuda_peer_access": [
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false
+    ]
+  ],
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "tensor_sha256": {
+    "model.layers.1.mlp.experts.0.gate_proj.weight": "68265786283334ef149c839a2574b90bb29dda6c39f798ba03f715db6595c578",
+    "model.layers.1.mlp.experts.0.up_proj.weight": "10abf2798a88c2f70710fd91b9f13c99dfd0f390b57c09115dae59959dd94fc8",
+    "model.layers.1.mlp.experts.0.down_proj.weight": "0de173830cbf4092fa67d21675770ee0161de980a883211cccedfcb5a5dc1332",
+    "model.layers.1.mlp.experts.1.gate_proj.weight": "2447d493b2754daa4dff9fe2a0ca48ff508e579ca759e0e6ca1d640c81248cb5",
+    "model.layers.1.mlp.experts.1.up_proj.weight": "eab1926025994d9816edb4b2e4f4c45fa8bdfbdf04f1cda110692a29a27359e3",
+    "model.layers.1.mlp.experts.1.down_proj.weight": "acb5b33dbec89473e21c45a5771d8b7b4813289c6aeff0fd6b0a3bb9405a1c84",
+    "model.layers.1.mlp.experts.2.gate_proj.weight": "1c2523f2cea30cbb1190d0afbb362e1bf2148df4a2a1724e2f5768fa259f454e",
+    "model.layers.1.mlp.experts.2.up_proj.weight": "d24ca802502073fc3420fc6ff9d864dbd3290b4b5db4155781236dc9a9d3525c",
+    "model.layers.1.mlp.experts.2.down_proj.weight": "d118d28a3243d161b2fc86c3b949f59f42ddfc63da388198277a0e3c1385dd1c",
+    "model.layers.1.mlp.experts.3.gate_proj.weight": "819e6fb2053f4ea04198aa7cbbae04eb0fe6283c6ebee01d83e41788cb05b239",
+    "model.layers.1.mlp.experts.3.up_proj.weight": "edad7a7e3577e6f6988ce46caadfcf0222b56f69287759fcff80783251c0bc93",
+    "model.layers.1.mlp.experts.3.down_proj.weight": "de0a1e75a52a7b0576c0a17ab742023a6e05205c6b48e8581ce2d2e4ad433009",
+    "model.layers.1.mlp.experts.4.gate_proj.weight": "8b696c5ce451334ce88a1370d38027c716d4b96a4c04a52387255c1dc6a78386",
+    "model.layers.1.mlp.experts.4.up_proj.weight": "d59662784b30c9f431ea8aa1360091e7b21db9fb8693cdb607b90265a3934d24",
+    "model.layers.1.mlp.experts.4.down_proj.weight": "cb4a057a1507986d3bf69f7abe5209b353d6dbf70cab62545db76ac9ba15e72c",
+    "model.layers.1.mlp.experts.5.gate_proj.weight": "6dd8e9f6182c0ae8b5a7b9e2482cde993f95b3a6e0fa3d4c98134c3a4b3d1c8b",
+    "model.layers.1.mlp.experts.5.up_proj.weight": "f21eb0e07a4d37203d091595b851865274ad097f523f35ae05e754fa398a29eb",
+    "model.layers.1.mlp.experts.5.down_proj.weight": "92c34278df5d18561c914d9de91a58e984526a6b347a0f4016b78ae512b46a46",
+    "model.layers.1.mlp.shared_experts.gate_proj.weight": "ec728852bf73e68d60b3eb6bfba07e3f9f38a4dd5c5693fc56b6d25a6b5a25e6",
+    "model.layers.1.mlp.shared_experts.up_proj.weight": "e5bbf8bf01e679b0e59c2d836a126bc9a5abbe4c6e7f153539db5e6a7cd60a1f",
+    "model.layers.1.mlp.shared_experts.down_proj.weight": "adfc48aa0712d8f211fee665fbaee92d291247244baf5a1c276f1a2ce96d4659"
+  },
+  "byte_scope": "logical NCCL payload, with split-size metadata reported separately",
+  "nccl_log": "modal:19:84 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct\nmodal:19:84 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 00 : 1[1] -> 3[3] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 00 : 3[3] -> 1[1] via SHM/direct/direct\nmodal:19:84 [2] NCCL INFO Channel 00 : 2[2] -> 0[0] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 00 : 0[0] -> 2[2] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 01 : 1[1] -> 3[3] via SHM/direct/direct\nmodal:19:84 [2] NCCL INFO Channel 01 : 2[2] -> 0[0] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 01 : 3[3] -> 1[1] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 01 : 0[0] -> 2[2] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 00 : 0[0] -> 3[3] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct\nmodal:19:84 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct\nmodal:17:82 [0] NCCL INFO Channel 01 : 0[0] -> 3[3] via SHM/direct/direct\nmodal:19:84 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct\nmodal:20:83 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct\nmodal:18:85 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct\nmodal:18:89 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct\nmodal:17:87 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct\nmodal:19:88 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct\nmodal:20:86 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct\nmodal:17:87 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct\nmodal:19:88 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct\nmodal:18:89 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct\nmodal:20:86 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct",
+  "input_scope": "fixed top-6 selections, real Sarvam expert and shared expert weights",
+  "results": {
+    "primaries_only": {
+      "ranks": [
+        {
+          "rank": 0,
+          "destinations_by_expert": [
+            1,
+            2,
+            3,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            3
+          ],
+          "local_experts_executed": [
+            3
+          ],
+          "remote_experts_executed": [
+            3,
+            3,
+            3
+          ],
+          "dispatch_logical_bytes": 40980,
+          "combine_logical_bytes": 24576,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 1,
+          "destinations_by_expert": [
+            1,
+            2,
+            3,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            0,
+            4
+          ],
+          "local_experts_executed": [
+            0,
+            4
+          ],
+          "remote_experts_executed": [
+            0,
+            4,
+            0,
+            4,
+            0,
+            4
+          ],
+          "dispatch_logical_bytes": 32784,
+          "combine_logical_bytes": 49152,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 2,
+          "destinations_by_expert": [
+            1,
+            2,
+            3,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            1,
+            5
+          ],
+          "local_experts_executed": [
+            1,
+            5
+          ],
+          "remote_experts_executed": [
+            1,
+            5,
+            1,
+            5,
+            1,
+            5
+          ],
+          "dispatch_logical_bytes": 32784,
+          "combine_logical_bytes": 49152,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 3,
+          "destinations_by_expert": [
+            1,
+            2,
+            3,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            2
+          ],
+          "local_experts_executed": [
+            2
+          ],
+          "remote_experts_executed": [
+            2,
+            2,
+            2
+          ],
+          "dispatch_logical_bytes": 40980,
+          "combine_logical_bytes": 24576,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        }
+      ],
+      "remote_expert_calls": 18,
+      "input_tokens": 4,
+      "dispatch_logical_bytes": 147528,
+      "combine_logical_bytes": 147456,
+      "split_exchange_logical_bytes": 96
+    },
+    "with_copies": {
+      "ranks": [
+        {
+          "rank": 0,
+          "destinations_by_expert": [
+            0,
+            0,
+            3,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            3,
+            0,
+            1
+          ],
+          "local_experts_executed": [
+            0,
+            1,
+            3
+          ],
+          "remote_experts_executed": [
+            3
+          ],
+          "dispatch_logical_bytes": 24588,
+          "combine_logical_bytes": 8192,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 1,
+          "destinations_by_expert": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            2
+          ],
+          "resident_experts": [
+            0,
+            4,
+            1,
+            2
+          ],
+          "local_experts_executed": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "remote_experts_executed": [
+            4,
+            0,
+            4,
+            0
+          ],
+          "dispatch_logical_bytes": 16392,
+          "combine_logical_bytes": 32768,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 2,
+          "destinations_by_expert": [
+            1,
+            2,
+            2,
+            2,
+            1,
+            2
+          ],
+          "resident_experts": [
+            1,
+            5,
+            2,
+            3
+          ],
+          "local_experts_executed": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "remote_experts_executed": [
+            5,
+            5,
+            1,
+            5
+          ],
+          "dispatch_logical_bytes": 16392,
+          "combine_logical_bytes": 32768,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        },
+        {
+          "rank": 3,
+          "destinations_by_expert": [
+            1,
+            2,
+            3,
+            3,
+            3,
+            2
+          ],
+          "resident_experts": [
+            2,
+            3,
+            4
+          ],
+          "local_experts_executed": [
+            2,
+            3,
+            4
+          ],
+          "remote_experts_executed": [
+            2
+          ],
+          "dispatch_logical_bytes": 24588,
+          "combine_logical_bytes": 8192,
+          "split_exchange_logical_bytes": 24,
+          "max_output_abs_error": 0.0
+        }
+      ],
+      "remote_expert_calls": 10,
+      "input_tokens": 4,
+      "dispatch_logical_bytes": 81960,
+      "combine_logical_bytes": 81920,
+      "split_exchange_logical_bytes": 96
+    }
+  }
+}
