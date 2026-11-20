@@ -97,7 +97,8 @@ with (root / "summary.csv").open("w", newline="") as stream:
     writer.writerows(rows)
 
 report = ["# Sarvam-30B fixed-continuation placement follow-up\n",
-          f"**{data['status'].title()}** on four L40S GPUs in Modal. {len(repeats)} trials, "
+          f"**{data['status'].title()}** on four L40S GPUs via {data.get('platform', 'Modal')}. "
+          f"{len(repeats)} trials, "
           f"{sum(r['decode_tokens'] for r in repeats):,} measured decode token positions.\n",
           "All runs use Sarvam-30B, BF16, PyTorch/NCCL, a fixed two-copy budget, "
           "and decode-only measurements on the same worker. The "

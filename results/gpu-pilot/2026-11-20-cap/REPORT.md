@@ -1,6 +1,6 @@
 # Sarvam-30B four-L40S load-cap follow-up
 
-The local placement audit and held-out replay are complete. The Modal benchmark was pending GPU allocation at this snapshot. The table below comes from recorded routing counts.
+The local placement audit and held-out replay are complete. The four-L40S GPU benchmark is pending capacity. The table below comes from recorded routing counts.
 
 ## Local results
 
@@ -25,3 +25,9 @@ The replay covers 2,500 held-out Sarvam FLORES sequences for the full mix and 2,
 The four-L40S PyTorch/NCCL benchmark compares the blind, aware and capped layouts at equal replica memory. Each trial replays 64 fixed decode inputs per request. Three matched repeat blocks use rotated trial order and include a blind A/A repeat. A separate 12-step diagnostic pass times NCCL size exchange, dispatch and combine as a share of slowest-rank step time. The primary run records logical MB per token, median and p95 inter-token latency, and observed rank work.
 
 [Fit audit](fit-audit.json) · [Local replay CSV](local-replay.csv) · [Frozen maps](cap-maps.json) · [Modal benchmark source](../../../gpu_pilot/modal_sarvam_cap.py) · [Prior GPU pilot](../modal-sarvam-decode/REPORT.md)
+
+## Cloud capacity, 20 November 2026
+
+Modal queued a single four-L40S worker and reported it was waiting for capacity. EC2 On-Demand returned `InsufficientInstanceCapacity` in Oregon, Virginia and Frankfurt for the lean `g6e.12xlarge` and the larger `g6e.24xlarge`, both with four L40S GPUs. Attempts to allocate the lean size with one-time Spot requests also returned insufficient capacity. No EC2 instance started. The temporary SSH security groups and imported key pairs were deleted and their removal verified.
+
+The [EC2 runner](../../../gpu_pilot/aws_sarvam_cap.py) uses the same shared harness, checkpoint revision, prompt IDs and placement maps as Modal. The EC2 runner has passed local syntax and argument checks. Live GPU results will require a successful four-L40S allocation.
