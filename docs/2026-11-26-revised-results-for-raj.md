@@ -1,5 +1,7 @@
 # Results
 
+[Complete paper PDF with Discussion](paper/paper-draft-v2.pdf) · [Editable full draft](paper/paper-draft-v2.md)
+
 Updated 26 November 2026. This complete section supersedes the earlier paragraph and table at this link.
 
 ## Language structure in routing
@@ -20,7 +22,7 @@ Exact recorded-request shuffles supported an additional benefit from the origina
 
 In the four-H200 NVLink replay experiments, uncapped language-aware placement reduced communication payload by 25.7–32.2% in decode and 26.2–33.0% in prefill relative to the default layout. The capped plan reduced prefill payload by 22.0–27.1%, and language-blind copies reduced it by 17.3–24.4%, also relative to the default. These baselines differ from the blind-copy baseline used for the L40S comparisons below.
 
-The H200 repeat check failed in 3 of 12 cells, almost all in decode; under the run's decision rule, every latency verdict from that run is not trusted, including prefill. We therefore claim no change in decode and report the prefill timings as consistent observed directions, not established effects. Uncapped aware placement showed a slower layer in five of six prefill cells, by up to 49.7%; the remaining cell's interval included zero. The capped plan showed 8–15% lower layer time than the default, while blind copies showed 13–19% lower layer time and were faster than the capped plan in all six cells. Thus blind copies saved fewer bytes but had the lowest observed layer times, subject to the run-wide timing qualification.
+The H200 repeat check failed in 3 of 12 cells, almost all in decode; under the run's decision rule, every latency verdict from that run is not trusted, including prefill. We therefore claim no change in decode and report the prefill timings as consistent observed directions, not established effects. Uncapped aware placement showed a slower layer in five of six prefill cells, by up to 49.7%; the remaining cell's layer-time interval included zero. The capped plan showed 8–15% lower layer time than the default, while blind copies showed 13–19% lower layer time and were faster than the capped plan in all six cells. Thus blind copies saved fewer bytes but had the lowest observed layer times, subject to the run-wide timing qualification.
 
 ## L40S fixed-continuation decode and cap audit
 
